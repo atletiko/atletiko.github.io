@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Bootstrap 4 Website Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -13,32 +14,126 @@
 
 <body>
 
-    <div class="container">
-        <h2>Alerts</h2>
-        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
-        <div class="alert alert-success">
-            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    <div class="jumbotron bg-info text-white" style="margin-bottom:0">
+        <h1 class="display-3">CeritaSaya</h1>
+        <p>-Nama Saya Muhammad Andre Hanafi dan Ini adalah Cerita Saya-</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- NAVBAR dan Segala Isinya -->
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105_1.html" target="_blank">Tugas 1 CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105_2.html" target="_blank">Tugas 2 CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105_3.html" target="_blank">Tugas 3 CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105_4.html" target="_blank">Tugas 4 CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105_5.html" target="_blank">Tugas 5 CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="05211940000105.html" target="_blank">Tugas Bootstrap</a>
+                </li>
+            </ul>
         </div>
-        <div class="alert alert-info">
-            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <!-- Kolom Kiri (Tentang Saya; Tautan) -->
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Tentang Saya</h2>
+                <h5>Hehehe...</h5>
+                <img src="images/foto-andre-di-forensik.jpg" width="180px" height="244px">
+                <p>Nama Saya Muhammad Andre Hanafi. Saya berasal dari Bekasi. Saat ini, Saya sedang berkuliah di Institut Teknologi Sepuluh Nopember Surabaya. Nomor induk Saya, atau di ITS biasa disebut NRP, adalah 05211940000105. Banyak hal luar biasa terdapat
+                    di depan dan Saya siap meraihnya dengan berusaha.
+                </p>
+                <br>
+                <h3>Link/Tautan</h3>
+                <p>Sebagai bagian dari pembelajaran Pemrograman Web C, di bawah ini merupakan tautan tugas yang sudah diberikan hingga minggu ke-4.</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105_1.html" target="_blank">Tugas 1 CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105_2.html" target="_blank">Tugas 2 CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105_3.html" target="_blank">Tugas 3 CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105_4.html" target="_blank">Tugas 4 CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105_5.html" target="_blank">Tugas 5 CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05211940000105.html" target="_blank">Tugas Bootstrap</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+
+            <div class="col-sm-8">
+                <!-- Kolom Kanan (Cerita) -->
+                <h2>PERTAMA KALI MENGUNJUNGI ITS</h2>
+                <h5>ITS Surabaya, 25 Juli 2019</h5>
+                <img src="images/ITS-foto-pertama.jpg" width="240px" height="340px">
+                <p class="font-italic">Tidak ada yang tahu masa depan seseorang.</p>
+                <p>Semuanya berawal dari kegagalan Saya pada SBMPTN 2019. Saya yang dinyatakan gagal lolos saat itu merasa sedih. Saya merasa apakah Saya memiliki kesempatan untuk berkuliah di PTN tahun ini. Malamnya, Saya yang tidak ingin berlarut-larut
+                    dalam kesedihan mencari informasi mengenai jalur mandiri yang ada di berbagai PTN di Indonesia. Kemudian, Saya mendaftar tes mandiri di beberapa PTN, salah satunya ITS. Saat itu orang tua Saya sudah menawarkan Saya untuk mendaftar
+                    di Universitas swasta sebagai langkah antisipasi jika Saya tidak diterima di PTN mana pun. Akan tetapi, Saya menolak tawaran itu dikarenakan Saya khawatir jika Saya telah memiliki cadangan tempat kuliah, Saya akan menjadi tidak fokus
+                    belajar persiapan tes mandiri dan khawatir aka menganggap remeh tes yang akan Saya hadapi. Dengan demikian, Saya hanya bergantung pada tes mandiri PTN. Setelah melalui seluruh tes mandiri, Saya harap-harap cemas menunggu hasil pengumumannya.
+                    Saat Saya membuka pengumuman mandiri ITS, Saya terkejut karena Saya diterima. Saya benar-benar bersyukur karena mimpi Saya untuk berkuliah di PTN tercapai.
+                    <br> <img src="images/Pengumuman-Lulus-ITS.jpg" width="360 px" height="200 px">
+                    <br>
+                    <p class="font-italic">Foto pengumuman Saya lolos SM ITS.</p>
+                    <br>Saya dan orang tua Saya tidak pernah menyangka bahwa Saya akan berkuliah di Jawa Timur, terutama di ITS. Hal ini terjadi karena sejak SMP hingga SMA akhir Saya selalu bermimpi untuk berkuliah di Jawa Barat atau Jawa Tengah. Kemudian,
+                    pada tanggal 25 Juli, Saya bersama Ayah Saya berangkat menuju ke Surabaya untuk melakukan daftar ulang. Di hari yang sama juga untuk pertama kalinya Saya menginjakkan kaki di Surabaya. Perasaan Saya sangat campur aduk, tapi perasaan
+                    utama yang Saya rasakan adalah perasaan senang dan bangga. Senang karena Saya kuliah di PTN dan Saya bangga karena Saya kuliah di PTN sebaik ITS. Tapi, bagaimana pun juga, ini merupakan awal baru bagi Saya. Sebuah lembar yang siap
+                    Saya isi. Saya berharap, Saya dapat meminggalkan jejak Saya di kampus ini, Kampus Perjuangan.
+                </p>
+                <br>
+                <h2>TRIP KE BROMO!</h2>
+                <h5>Bromo, 16 Desember 2019</h5>
+                <img src="images/Bromo-2.jpg" width="360 px" height="240 px">
+                <p class="font-italic">Pengalaman mendekatkan diri dengan teman-teman baru.</p>
+                <p>Sebagai anak rantau dengan sedikit teman di Surabaya, penting bagi Saya untuk mencari teman-teman agar memudahkan Saya beradaptasi di sini. Setelah melalui banyak minggu perkuliahan, Saya pada akhirnya memiliki teman-teman dari berbagai
+                    daerah dan latar belakang. Beberapa diantaranya menjadi teman dekat Saya hingga saat ini. Singkat cerita, Saya dan teman-teman Saya memiliki rencana untuk pergi jalan-jalan setelah suntuk menjalani EAS dan berbagai Final Project. Pilihan
+                    kami saat itu akhirnya jatuh ke Bromo. Sejujurnya, Saya sangat gugup karena itu merupakan perjalan jauh pertama kali Saya dengan teman-teman tanpa diawasi oleh orang yang lebih tua, hehe.
+                    <br>Pada Hari-H, kami berkumpul dan berangkat dari Surabaya sekitar jam 22:00 WIB. Kami bertiga naik dua motor di mana Saya menumpang pada salah satu motor teman Saya. Perjalan kami tempuh melalui beberapa wilayah yaitu Sidoarjo dan
+                    Pasuruan. Saat kami sampai di Alun-Alun Pasuruan, kami berhenti terlebih dahulu untuk makan dan istirahat. Sekitar jam 01:00 WIB pagi, kami melanjutkan perjalanan kami naik ke Taman Nasional Bromo. Perjalanan yang gelap dan dingin
+                    membuat kami bertiga khawatir akan terjadinya hal-hal yang tidak diinginkan. Untungnya, hingga kami sampai di gerbang TN Bromo, tidak terjadi apa-apa.
+                    <br> <img src="images/Bromo-1.jpg" width="360 px" height="240 px"> <br>
+                    <p class="font-italic">Menikmati sunrise di bukit sekitar Bromo, pagi sekitar pukul 05:00 WIB</p>
+                    Kami akhirnya mendapat spot untuk menikmati sunrise di bukit sekitaran Bromo sekitar pukul 04:30 WIB. Kami bersantai duduk sambil berbincang menunggu sunrise. Saat matahari sudah cukup terang, kami memutuskan untuk mencari spot foto lain dan berjalan
+                    menaiki motor melalui padang pasirnya. Kami menelusuri padang pasir tersebut selama berjam-jam dan memutuskan untuk turun dari TN Bromo lewat jalur Malang di mana sebelumnya kami naik melalui jalur Pasuruan. Pengalaman tersebut merupakan
+                    salah satu pengalaman terbaik Saya.
+                </p>
+            </div>
         </div>
-        <div class="alert alert-warning">
-            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-        </div>
-        <div class="alert alert-danger">
-            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-        </div>
-        <div class="alert alert-primary">
-            <strong>Primary!</strong> Indicates an important action.
-        </div>
-        <div class="alert alert-secondary">
-            <strong>Secondary!</strong> Indicates a slightly less important action.
-        </div>
-        <div class="alert alert-dark">
-            <strong>Dark!</strong> Dark grey alert.
-        </div>
-        <div class="alert alert-light">
-            <strong>Light!</strong> Light grey alert.
+    </div>
+
+    <div class="container-fluid">
+        <div class="jumbotron-fluid bg-dark text-light text-center" style="margin-bottom:0">
+            <br>
+            <h4>Hubungi Saya:</h4>
+            <i class="fab fa-line"> andre27hanafi</i>
+            <br><i class="fas fa-envelope"> andre27hanafi@gmail.com</i>
+            <br><i class="fab fa-linkedin"> Muhammad Andre Hanafi</i>
+            <br>
+            <br>
         </div>
     </div>
 
