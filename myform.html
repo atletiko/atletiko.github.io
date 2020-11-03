@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>5211942000002 - MOCHAMAD ZIDAN AQILA KAMIL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .label {
+            float: left;
+            width: 120px;
+        }
+        
+        .infobox {
+            width: 200px;
+        }
+        
+        .error {
+            color: red;
+            padding-left: 10px;
+        }
+        
+        .submit {
+            margin-left: 125px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="signup" method="post" action="">
+            <div>
+                <span class="label">Phone Number</span>
+                <input type="text" class="infobox" name="age" />
+                <span class="error"> Only numericals allowed</span></div>
+            <script>
+                $(document).ready(function() {
+                    $('.error').hide(); //label dengan class name error di sembunyikan
+                    $('.submit').click(function(event) { //The click event occurs when button with class name submit is clicked.
+                        var data = $('.infobox').val(); //returns the value of text box with class name infobox
+                        var len = data.length; //Return the number of characters in infobox in a string
+                        var c; //store each character in infobox string
+                        for (var i = 0; i < len; i++) {
+                            c = data.charAt(i).charCodeAt(0);
+                            if (c < 48 || c > 57) {
+                                $('.error').show();
+                                event.preventDefault();
+                                break;
+                            } else {
+                                $('.error').hide();
+                            }
+                        }
+                    });
+                });
+            </script>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
