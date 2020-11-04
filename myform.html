@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>5211942000002 - MOCHAMAD ZIDAN AQILA KAMIL</title>
+    <title>05211940000019 - Shinta Yunita Rahmawati</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
@@ -28,22 +28,23 @@
 </head>
 
 <body>
-
     <div class="container">
         <form id="signup" method="post" action="">
             <div>
-                <span class="label">Phone Number</span>
-                <input type="text" class="infobox" name="age" />
-                <span class="error"> Only numericals allowed</span></div>
+                <span class="label">Umur Siswa </span>
+                <input type="text" class="infobox form-control" name="age" />
+                <span class="error"> Maaf , hanya boleh Angka</span>
+            </div>
             <script>
                 $(document).ready(function() {
-                    $('.error').hide(); //label dengan class name error di sembunyikan
-                    $('.submit').click(function(event) { //The click event occurs when button with class name submit is clicked.
-                        var data = $('.infobox').val(); //returns the value of text box with class name infobox
-                        var len = data.length; //Return the number of characters in infobox in a string
-                        var c; //store each character in infobox string
-                        for (var i = 0; i < len; i++) {
-                            c = data.charAt(i).charCodeAt(0);
+                    $('.error').hide(); //class dengan mana error disembunyikan dahulu
+                    $('.submit').click(function(event) { //tombol submit di klik
+                        var data = $('.infobox').val(); // membaca isi text box dengan class name infobox
+                        var len = data.length; //membaca isi text box , dicari berapa panjang karakternyaa
+                        //dan disimpan di variabel len
+                        var c; //untuk menyimpan per karakter yg di cek
+                        for (var i = 0; i < len; i++) { //cek satu persatu karakter di text box
+                            c = data.charAt(i).charCodeAt(0); //membaca 1 karakter ke i
                             if (c < 48 || c > 57) {
                                 $('.error').show();
                                 event.preventDefault();
@@ -55,10 +56,9 @@
                     });
                 });
             </script>
-            <input class="submit" type="submit" value="Submit">
+            <input class="submit btn btn-success" type="submit" value="Submit">
         </form>
     </div>
-
 </body>
 
 </html>
